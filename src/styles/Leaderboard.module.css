@@ -1,0 +1,135 @@
+/* src/components/Leaderboard.module.css */
+.leaderboard {
+    background-color: #1a1a1a; /* Black background */
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #000000; /* Maroon background */
+    padding: 0.5rem 1rem;
+  }
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc; /* Temporary logo color */
+    border-radius: 50%;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .searchContainer {
+    position: relative;
+    margin-left: 1rem;
+  }
+  
+  .searchInput {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+  }
+  
+  .searchIcon {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navLink {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navLink:hover,
+  .navLink:focus {
+    background-color: #a52a2a; /* Lighter maroon for hover */
+    color: #fff;
+  }
+  
+  .filter {
+    background-color: #a52a2a;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+  
+  /* ... (rest of your styles for the leaderboard table) ... */
+  
+  
+  .table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .columnHeaders {
+    display: flex;
+    background-color: #000000;
+    padding: 10px 20px;
+  }
+  
+  .column {
+    text-align: center;
+    flex: 1;
+  }
+  
+  .column.rank,
+  .column.tokenRewarded {
+    flex: none;
+    width: 100px;
+  }
+  
+  .entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid #333;
+  }
+  
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid #c42e2e;
+  }
+  
+  .rank,
+  .username,
+  .invitesCount,
+  .tokenRewarded {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  

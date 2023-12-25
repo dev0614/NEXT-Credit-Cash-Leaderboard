@@ -1,0 +1,176 @@
+/* src/components/Leaderboard.module.css */
+.leaderboard {
+  /* Black background */
+  /* border-radius: 4px; */
+  background-color: #1a1a1a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #000000; */
+  /* Maroon background */
+  padding: 0.5rem 1rem;
+}
+
+.logo {
+  align-items: center;
+  display: flex;
+  margin-right: 1rem;
+  justify-content: center;
+}
+
+.logoImage {
+  height: 50px;
+  width: 50px;
+}
+
+.searchContainer {
+  flex-grow: 5;
+  margin-left: 1rem;
+  position: relative;
+}
+
+.searchInput {
+  background-color: #2F2F2F;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  outline: none;
+  padding: .9rem 0 .9rem 1rem;
+  width: calc(100% - 1rem);
+}
+
+.menu {
+  display: flex;
+  font-size: 1.5rem;
+  gap: 2rem;
+  margin: 0 1rem 0 3rem;
+}
+
+.searchIcon {
+  bottom: 8px;
+  color: #fff;
+  font-size: 1.7rem;
+  position: absolute;
+  right: 15px;
+  /* top: 50%;
+    transform: translateY(-50%); */
+}
+
+.navbar {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1.1rem;
+  justify-content: space-around;
+  margin: 0 1rem;
+}
+
+.navLink {
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navLink:hover,
+.navLink:focus {
+  background-color: #a52a2a;
+  /* Lighter maroon for hover */
+  color: #fff;
+}
+
+.titleAndFilter {
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 2rem 1.5rem 2rem 1rem;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.titleAndFilter div {
+  display: flex;
+  gap: 2rem
+}
+
+.titleAndFilter button {
+  padding: 0 2rem;
+  font-size: 1.1rem;
+}
+
+
+.filter {
+  font-size: 1.1rem;
+  background-color: #a52a2a;
+  border: transparent;
+  border-right: 2rem solid transparent;
+  color: #fff;
+  padding-left: 2rem;
+  cursor: pointer;
+}
+
+/* ... (rest of your styles for the leaderboard table) ... */
+
+
+.table {
+  border: solid 1px #949494;
+  border-radius: 15px;
+}
+
+.table>thead>tr {
+  height: 60px;
+}
+
+.columnHeaders {
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.column {
+  width: 25%;
+}
+
+.entry {
+  height: 60px;
+}
+
+.entry>td {
+  border-top: 1px solid rgba(153, 0, 0, .7);
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #c42e2e;
+}
+
+.username {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  padding-left: 32%;
+}
+
+.rank,
+.invitesCount,
+.tokenRewarded {
+  width: 25%;
+}
